@@ -11,7 +11,6 @@ import (
 func main() {
 	r := gin.Default()
 
-	// CONFIGURACIÓN DE CORS: Permite que cualquier frontend consuma tu API
 	config := cors.DefaultConfig()
 	config.AllowAllOrigins = true
 	r.Use(cors.New(config))
